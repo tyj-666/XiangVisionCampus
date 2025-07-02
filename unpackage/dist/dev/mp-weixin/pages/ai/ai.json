@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "up-icon": "../../node-modules/uview-plus/components/u-icon/u-icon"
+  }
+}

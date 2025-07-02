@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "up-navbar": "../../node-modules/uview-plus/components/u-navbar/u-navbar"
+  }
+}

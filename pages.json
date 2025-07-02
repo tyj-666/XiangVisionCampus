@@ -1,0 +1,119 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+				
+			}
+		},
+		{
+			"path" : "pages/home/home",
+			"style" : 
+			{
+				"navigationBarTitleText" : "首页"
+			}
+		},
+		{
+			"path" : "pages/map/map",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/rank/rank",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		},		
+		{
+			"path" : "pages/schoolDetail/schoolDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		},
+
+		{
+			"path" : "pages/vrMap/vrMap",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/schoolWebsite/schoolWebsite",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/entranceScores/entranceScores",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/ai/ai",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+		
+	],
+	"tabBar": {
+		"color": "#333",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				// "text": "首页",
+				"iconPath": "/static/首页.png",
+				"selectedIconPath": "/static/首页_选择.png"
+			},
+			{
+				"pagePath": "pages/map/map",
+				// "text": "地图",
+				"iconPath": "/static/地图.png",
+				"selectedIconPath": "/static/地图_选择.png"
+			},
+			{
+				"pagePath": "pages/rank/rank",
+				// "text": "排行榜",
+				"iconPath": "/static/排行.png",
+				"selectedIconPath": "/static/排行_选择.png"
+			},
+			{
+				"pagePath": "pages/ai/ai",
+				// "text": "AI",
+				"iconPath": "/static/ai.png",
+				"selectedIconPath": "/static/ai_选择.png"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+		    "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

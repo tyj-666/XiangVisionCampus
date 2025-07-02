@@ -1,0 +1,1 @@
+<view class="{{['content', virtualHostClass]}}" style="{{virtualHostStyle}}" hidden="{{virtualHostHidden || false}}" id="{{c}}"><view><map style="width:100%;height:100vh" id="map" scale="9" layer-style="1" markers="{{a}}" longitude="112.952856" latitude="27.644106" bindmarkertap="{{b}}"></map></view></view>

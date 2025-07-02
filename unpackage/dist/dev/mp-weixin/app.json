@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/map/map",
+    "pages/rank/rank",
+    "pages/schoolDetail/schoolDetail",
+    "pages/vrMap/vrMap",
+    "pages/schoolWebsite/schoolWebsite",
+    "pages/entranceScores/entranceScores",
+    "pages/ai/ai"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/static/首页.png",
+        "selectedIconPath": "/static/首页_选择.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "/static/地图.png",
+        "selectedIconPath": "/static/地图_选择.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "/static/排行.png",
+        "selectedIconPath": "/static/排行_选择.png"
+      },
+      {
+        "pagePath": "pages/ai/ai",
+        "iconPath": "/static/ai.png",
+        "selectedIconPath": "/static/ai_选择.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于获取位置"
+    }
+  },
+  "usingComponents": {}
+}

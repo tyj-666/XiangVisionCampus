@@ -1,0 +1,163 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* uni.scss */
+.content {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+.content image {
+  width: 100%;
+  height: 600rpx;
+}
+.content .school-header {
+  display: flex;
+  flex-direction: row;
+  /* 改为横向排列 */
+  align-items: center;
+  /* 垂直居中 */
+  background-color: #fff;
+  padding: 30rpx;
+}
+.content .school-header .school-title {
+  padding: 30rpx;
+  width: 60%;
+}
+.content .school-header .school-title .school-name {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.content .school-header .school-title .school-tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.content .school-header .school-title .school-tag .tag {
+  background-color: #f0f0f0;
+  color: #666;
+  font-size: 24rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+}
+.content .school-header .school-title .school-tag .tag.tag-211 {
+  background-color: #c8f3f5;
+}
+.content .school-header .school-title .school-tag .tag.tag-985 {
+  background-color: #ffccc2;
+}
+.content .school-header .school-title .school-tag .tag.tag-double {
+  background-color: #b6f1bb;
+}
+.content .school-header .school-title .location {
+  font-size: 28rpx;
+  color: #666;
+}
+.content .school-header .school-title .location .location-icon {
+  margin-right: 10rpx;
+}
+.content .school-header .school-logo {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  /* 超出部分隐藏，确保圆形 */
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+  /* 添加阴影 */
+}
+.content .school-header .school-logo image {
+  width: 100%;
+  height: 100%;
+}
+.content .function-entries {
+  display: flex;
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 0;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+.content .function-entries .entry {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+.content .function-entries .entry .entry-icon {
+  font-size: 48rpx;
+  color: #007aff;
+  margin-bottom: 10rpx;
+}
+.content .function-entries .entry text {
+  font-size: 26rpx;
+  color: #333;
+}
+.content .section {
+  background-color: #fff;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.content .section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.content .section .section-header .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+.content .section .section-header .toggle,
+.content .section .section-header .more {
+  font-size: 28rpx;
+  color: #666;
+}
+.content .section .section-header .toggle .toggle-icon,
+.content .section .section-header .toggle .more-icon,
+.content .section .section-header .more .toggle-icon,
+.content .section .section-header .more .more-icon {
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+.content .section .section-content {
+  padding: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.8;
+}
+.content .section .section-content text {
+  display: block;
+}
+.content .section:not(.expanded) .section-content {
+  height: 80rpx;
+  overflow: hidden;
+}

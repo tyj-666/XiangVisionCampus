@@ -1,0 +1,138 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* uni.scss */
+.route-max.data-v-fdb58938 {
+  width: 100%;
+  background-size: cover;
+  background-image: url("https://xnlv.lizxx.com/image/xnlv/static/yunzhanguan/yunzhanguanimage-49603.png");
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 120rpx;
+  /* 为固定输入框留出空间 */
+  /* 固定在底部的输入框容器 */
+}
+.route-max .route-content-show.data-v-fdb58938 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.route-max .route-content-show .route-scroll-Y.data-v-fdb58938 {
+  width: 100%;
+  height: 100%;
+  overflow-anchor: auto;
+  padding-bottom: 20rpx;
+}
+.route-max .route-bottom-fixed.data-v-fdb58938 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20rpx;
+  box-shadow: 0 -2rpx 10rpx rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.route-max .route-user-box.data-v-fdb58938 {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.route-max .route-user-box .route-input-box.data-v-fdb58938 {
+  max-width: 70%;
+  background-color: #ffffff;
+  border-radius: 20rpx 5rpx 20rpx 20rpx;
+  margin-right: 15rpx;
+  margin-top: 20rpx;
+}
+.route-max .route-user-box .route-input-box .route-input-content.data-v-fdb58938 {
+  font-size: 32rpx;
+  color: #000;
+  padding: 20rpx;
+  word-break: break-word;
+}
+.route-max .route-user-box image.data-v-fdb58938 {
+  margin-top: 20rpx;
+}
+.route-max .route-Ai-box.data-v-fdb58938 {
+  display: flex;
+  margin-top: 20rpx;
+  align-items: flex-start;
+}
+.route-max .route-Ai-box image.data-v-fdb58938 {
+  margin-top: 20rpx;
+}
+.route-max .route-Ai-box .route-Ai-input.data-v-fdb58938 {
+  background-color: #ffffff;
+  border-radius: 5rpx 20rpx 20rpx 20rpx;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+  max-width: 70%;
+}
+.route-max .route-Ai-box .route-Ai-input .smaa-user-cursor.data-v-fdb58938 {
+  width: 4rpx;
+  height: 30rpx;
+  margin: 20rpx;
+  background-color: #000;
+  animation: loading-fdb58938 1s infinite;
+}
+@keyframes loading-fdb58938 {
+0% {
+    opacity: 0.8;
+}
+100% {
+    opacity: 0;
+}
+}
+.route-max .route-Ai-box .route-Ai-input .route-Ai-content.data-v-fdb58938 {
+  font-size: 32rpx;
+  color: #000;
+  padding: 20rpx;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+.route-max .route-bottom-box.data-v-fdb58938 {
+  width: 100%;
+  height: 100rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 75rpx;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.route-max .route-bottom-box .route-bottom-input.data-v-fdb58938 {
+  flex: 1;
+  height: 70rpx;
+  font-size: 30rpx;
+  color: #000;
+}

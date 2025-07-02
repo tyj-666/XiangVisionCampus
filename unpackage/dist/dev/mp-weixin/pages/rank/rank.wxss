@@ -1,0 +1,228 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* uni.scss */
+.page.data-v-716fbf2c {
+  background: #f7f7f7;
+  color: #333;
+}
+.page .header.data-v-716fbf2c {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6a2c88, #ff64b7);
+  padding: 30rpx;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.page .header .title.data-v-716fbf2c {
+  text-align: center;
+  flex: 1;
+}
+.page .header .title-text.data-v-716fbf2c {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.ranking-list.data-v-716fbf2c {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+.ranking-list .ranking-card.data-v-716fbf2c {
+  display: flex;
+  align-items: center;
+  padding: 25rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+}
+.ranking-list .ranking-card.animate-in.data-v-716fbf2c {
+  animation: slideIn-716fbf2c 0.5s ease forwards;
+  animation-delay: var(--delay, 0s);
+}
+.ranking-list .ranking-card.card-selected.data-v-716fbf2c {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px) scale(1.01);
+  background: #f9f9f9;
+}
+.ranking-list .ranking-card.card-selected.data-v-716fbf2c::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5rpx;
+  background: linear-gradient(to bottom, #6a2c88, #ff64b7);
+}
+.ranking-list .ranking-card.data-v-716fbf2c:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+.ranking-list .rank.data-v-716fbf2c {
+  display: flex;
+  align-items: center;
+  width: 85rpx;
+  justify-content: center;
+  margin-right: 10rpx;
+}
+.ranking-list .rank .rank-icon.data-v-716fbf2c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+}
+.ranking-list .rank .rank-text.data-v-716fbf2c {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: gold;
+}
+.ranking-list .rank-info.data-v-716fbf2c {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+.ranking-list .rank-info .rank-image.data-v-716fbf2c {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.ranking-card:hover .ranking-list .rank-info .rank-image.data-v-716fbf2c, .card-selected .ranking-list .rank-info .rank-image.data-v-716fbf2c {
+  transform: scale(1.1);
+}
+.ranking-list .rank-info .rank-name.data-v-716fbf2c {
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 5rpx;
+}
+.ranking-list .rank-actions.data-v-716fbf2c {
+  display: flex;
+  align-items: center;
+  gap: 5rpx;
+}
+.ranking-list .rank-actions .like-section.data-v-716fbf2c {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10rpx 15rpx;
+  border-radius: 50rpx;
+  transition: all 0.3s ease;
+}
+.ranking-list .rank-actions .like-section.data-v-716fbf2c:hover {
+  background: #f5f5f5;
+}
+.ranking-list .rank-actions .like-section .like-icon.data-v-716fbf2c {
+  font-size: 28rpx;
+  color: #ff4444;
+  transition: transform 0.3s ease;
+}
+.ranking-list .rank-actions .like-section .like-icon.like-animation.data-v-716fbf2c {
+  animation: likePulse-716fbf2c 0.5s ease-in-out;
+}
+.ranking-list .rank-actions .like-section .like-count.data-v-716fbf2c {
+  font-size: 22rpx;
+  color: #333;
+  margin-left: 5rpx;
+}
+.ranking-list .rank-actions .more-options.data-v-716fbf2c {
+  width: 100%;
+  color: #888;
+  padding: 10rpx 20rpx;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.ranking-list .rank-actions .more-options.data-v-716fbf2c:hover {
+  background: #f5f5f5;
+}
+.gold.data-v-716fbf2c {
+  background: linear-gradient(45deg, #ffd700, #ffaa00);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+.gold.data-v-716fbf2c::after {
+  content: "👑";
+  position: absolute;
+  font-size: 12px;
+  top: -5px;
+  right: -5px;
+}
+.silver.data-v-716fbf2c {
+  background: linear-gradient(45deg, #c0c0c0, #a9a9a9);
+  box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+}
+.silver.data-v-716fbf2c::after {
+  content: "⭐";
+  position: absolute;
+  font-size: 12px;
+  top: -5px;
+  right: -5px;
+}
+.bronze.data-v-716fbf2c {
+  background: linear-gradient(45deg, #cd7f32, #a0522d);
+  box-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+.bronze.data-v-716fbf2c::after {
+  content: "🏅";
+  position: absolute;
+  font-size: 12px;
+  top: -5px;
+  right: -5px;
+}
+@keyframes slideIn-716fbf2c {
+0% {
+    opacity: 0;
+    transform: translateX(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+@keyframes likePulse-716fbf2c {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.5);
+}
+100% {
+    transform: scale(1);
+}
+}

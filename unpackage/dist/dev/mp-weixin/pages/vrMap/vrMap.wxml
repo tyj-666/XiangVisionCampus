@@ -1,0 +1,1 @@
+<view class="{{[virtualHostClass]}}" style="{{virtualHostStyle}}" hidden="{{virtualHostHidden || false}}" id="{{b}}"><web-view src="{{a}}"></web-view></view>
