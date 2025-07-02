@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "高校推荐官",
   "usingComponents": {
     "up-icon": "../../node-modules/uview-plus/components/u-icon/u-icon"
   }
